@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<section id="content-article">
+    {{ if .Params.image }}
+    <figure class="header-image" style="background-image: url({{ .Params.image }}"></figure>
+    {{ end }}
+    <article>
+        <h1>{{ .Title }}</h1>
+            {{ .Content }}
+    </article>
+</section>
+{{ partial "footer.html" . }}
