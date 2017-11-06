@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <section id="content-article">
     {{ if .Params.image }}
     <figure class="header-image" style="background-image: url({{ .Params.image }}"></figure>
@@ -8,4 +8,4 @@
             {{ .Content }}
     </article>
 </section>
-{{ partial "footer.html" . }}
+{{ end }}

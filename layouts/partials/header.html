@@ -15,7 +15,9 @@
 
 <body>
     <div id="container">
-    <nav>
-        
-    </nav>
+            <header>
+                    <h1><a href="/">{{ .Site.Title }}</a></h1>
+                    <p>{{ .Site.Params.description }}</p>
+                 </header>
+    {{ partial "nav" . }}
     <main>
