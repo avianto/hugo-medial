@@ -28,6 +28,22 @@ body {
   background-color: #c0c0c0;
 }
 
+#container nav {
+  width: 700px;
+  margin: 0 auto;
+}
+
+#container nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#container nav ul li {
+  margin-right: 1em;
+}
+
 #container main {
   flex: 1 0 0;
   line-height: 1.5;
